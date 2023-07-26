@@ -8,7 +8,18 @@ const Hero = () => {
         <div className='mesh-gradient absolute inset-0 opacity-10 w-screen h-screen -z-[1]'></div>
         <div className='flex flex-col items-start container'>
           <TitleLogo />
-          <TypographyLead>Enhance your kick.com experience.</TypographyLead>
+          <TypographyLead>
+            Enhance your{' '}
+            <a
+              href='https://kick.com'
+              target='_blank'
+              rel='noopener norefferer'
+              className='underline-offset-4 hover:underline text-primary'
+            >
+              kick.com
+            </a>{' '}
+            experience.
+          </TypographyLead>
 
           <p className='scroll-m-20 text-xl font-semibold tracking-tight mt-8'>coming soon-ish 👀</p>
         </div>
