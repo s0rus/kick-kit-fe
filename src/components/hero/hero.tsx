@@ -6,7 +6,7 @@ const Hero = () => {
     <>
       <div className='w-full h-full flex justify-start items-center'>
         <div className='mesh-gradient absolute inset-0 opacity-10 w-screen h-screen -z-[1]'></div>
-        <div className='flex flex-col items-start'>
+        <div className='flex flex-col items-start container'>
           <TitleLogo />
           <TypographyLead>Enhance you kick.com experience.</TypographyLead>
 
