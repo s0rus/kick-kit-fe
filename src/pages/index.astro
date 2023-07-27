@@ -1,9 +1,11 @@
 ---
 import Hero from '@/components/hero/hero';
+import Scene from '@/components/scene/scene';
 import MainLayout from '@/layouts/main-layout.astro';
 import '@/styles/globals.css';
 ---
 
 <MainLayout>
   <Hero />
+  <Scene client:load />
 </MainLayout>

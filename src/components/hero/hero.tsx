@@ -4,9 +4,9 @@ import TypographyLead from '../ui/typography-lead';
 const Hero = () => {
   return (
     <>
-      <div className='w-full h-full flex justify-start items-center'>
+      <div className='w-full h-full flex justify-between items-center container'>
         <div className='mesh-gradient absolute inset-0 opacity-10 w-screen h-screen -z-[1]'></div>
-        <div className='flex flex-col items-start container'>
+        <div className='flex flex-col items-start'>
           <TitleLogo />
           <TypographyLead>
             Enhance your{' '}
