@@ -1,6 +1,7 @@
-import { ArrowDownNarrowWideIcon, GithubIcon, InfoIcon, type LucideProps } from 'lucide-react';
+import { ArrowDownNarrowWideIcon, GithubIcon, InfoIcon, Loader2Icon, type LucideProps } from 'lucide-react';
 
 export const Icon = {
+  loading: Loader2Icon,
   info: InfoIcon,
   arrowDown: ArrowDownNarrowWideIcon,
   github: GithubIcon,

@@ -1,5 +1,5 @@
 ---
-import Changelog from '@/components/changelog/changelog.astro';
+import Changelog from '@/components/changelog/changelog';
 import Hero from '@/components/hero/hero';
 import Scene from '@/components/scene/scene';
 import MainLayout from '@/layouts/main-layout.astro';
@@ -9,5 +9,5 @@ import '@/styles/globals.css';
 <MainLayout>
   <Hero client:load />
   <Scene client:load />
-  <Changelog />
+  <Changelog client:only />
 </MainLayout>
