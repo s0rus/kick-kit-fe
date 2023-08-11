@@ -2,6 +2,7 @@ import { CHANGELOG_RAW_URL } from '@/constants';
 import { marked } from 'marked';
 import { useQuery } from 'react-query';
 import { Icon } from '../ui/icon';
+import { ScrollArea } from '../ui/scroll-area';
 import TypographyLead from '../ui/typography-lead';
 
 const ChangelogContent = () => {
@@ -23,7 +24,15 @@ const ChangelogContent = () => {
     return <TypographyLead>Here should be the changelog, but something went wrong :(</TypographyLead>;
   }
 
-  return <>{data && <div dangerouslySetInnerHTML={{ __html: data }} />}</>;
+  return (
+    <>
+      {data && (
+        <ScrollArea className='h-[500px] w-full flex gap-4 border border-muted rounded-md mt-2 px-4 py-2 shadow-2xl'>
+          <div dangerouslySetInnerHTML={{ __html: data }} />
+        </ScrollArea>
+      )}
+    </>
+  );
 };
 
 export default ChangelogContent;

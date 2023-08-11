@@ -1,4 +1,4 @@
-import { EXTENSION_CHROME_URL, KICK_URL, REPO_URL } from '@/constants';
+import { EXTENSION_CHROME_URL, KICK_URL, REPO_URL, SECTION_ID } from '@/constants';
 import { scrollToElement } from '@/lib/scrollIntoView';
 import TitleLogo from '../title-logo/title-logo';
 import { buttonVariants } from '../ui/button';
@@ -8,7 +8,7 @@ import TypographyLead from '../ui/typography-lead';
 const Hero = () => {
   return (
     <>
-      <div className='w-fit h-screen flex flex-col justify-center'>
+      <div className='w-fit h-screen flex flex-col justify-center' id={SECTION_ID.HERO}>
         <div className='mesh-gradient absolute inset-0 opacity-10 -z-[1]'></div>
         <div className='flex flex-col items-start justify-center flex-1'>
           <TitleLogo />
@@ -34,10 +34,10 @@ const Hero = () => {
               rel='noopener norefferer'
               className={buttonVariants({
                 variant: 'ghost',
-                size: 'lg',
+                size: 'icon',
               })}
             >
-              <Icon.chrome className='w-9 h-9' />
+              <Icon.chrome className='w-8 h-8' />
             </a>
             <p className='flex flex-row items-center'>
               <Icon.info /> <span className='mx-2'>Firefox coming soon!</span>{' '}
@@ -46,10 +46,10 @@ const Hero = () => {
               href='#'
               className={buttonVariants({
                 variant: 'ghost',
-                size: 'lg',
+                size: 'icon',
               })}
             >
-              <Icon.firefox className='w-9 h-9' />
+              <Icon.firefox className='w-8 h-8' />
             </a> */}
           </div>
 
@@ -60,6 +60,7 @@ const Hero = () => {
               rel='noopener norefferer'
               className={buttonVariants({
                 variant: 'ghost',
+                size: 'icon',
               })}
             >
               <Icon.github className='w-6 h-6' />
@@ -69,7 +70,7 @@ const Hero = () => {
         <div className='mt-auto pb-6'>
           <Icon.arrowDown
             className='text-muted h-12 w-12 hover:text-foreground cursor-pointer transition-colors animate-pulse rounded-full p-2 hover:animate-none'
-            onClick={() => scrollToElement('changelog')}
+            onClick={() => scrollToElement(SECTION_ID.FEATURES)}
           />
         </div>
       </div>

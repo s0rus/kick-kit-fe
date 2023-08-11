@@ -1,0 +1,25 @@
+---
+import { FEATURES, SECTION_ID } from '@/constants';
+import TypographyH1 from '../ui/typography-h1';
+import VideoCard from './video-card/video-card';
+---
+
+<div id={SECTION_ID.FEATURES}>
+  <TypographyH1>Features</TypographyH1>
+  <div class='my-10'></div>
+  <div class='grid-cols-1 lg:grid-cols-2 grid items-start justify-center gap-x-8 gap-y-3'>
+    {
+      FEATURES.map((feature, index) => {
+        return index % 2 === 0 ? (
+          <div class='col-span-1 grid'>
+            <VideoCard title={feature.title} subtitle={feature.subtitle} src={feature.url} client:load />
+          </div>
+        ) : (
+          <div class='col-span-1 grid lg:mt-6'>
+            <VideoCard title={feature.title} subtitle={feature.subtitle} src={feature.url} client:load />
+          </div>
+        );
+      })
+    }
+  </div>
+</div>
