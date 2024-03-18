@@ -17,17 +17,17 @@ export const FEATURES: KKFeature[] = [
   {
     title: 'Video information',
     subtitle: 'Basic information about videos in the chat!',
-    url: 'https://cdn.discordapp.com/attachments/1048729482627907624/1138513906097201323/kickkit-promo-videos.mp4#t=0.1',
+    url: '/kickkit-promo-videos.mp4',
   },
   {
     title: 'Images and gifs',
     subtitle: 'Images and gifs from safe platforms in the chat!',
-    url: 'https://cdn.discordapp.com/attachments/1048729482627907624/1138513927727231097/kickkit-promo-images.mp4#t=0.1',
+    url: '/kickkit-promo-images.mp4',
   },
   {
     title: 'Hide UI',
     subtitle: 'Hide UI elements to get free real estate in the chat!',
-    url: 'https://cdn.discordapp.com/attachments/1048729482627907624/1138530691987013652/kickkit-promo-ui.mp4#t=0.1',
+    url: '/kickkit-promo-ui.mp4',
   },
 ];
 
